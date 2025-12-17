@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SET A – 30 Tasks</title>
+<style>
+body{font-family:Arial}
+section{border:1px solid #000; padding:10px; margin:10px}
+</style>
+</head>
+<body>
+
+<h2>SET A – JavaScript 30 Tasks</h2>
+
+<!-- 1 -->
+<section>
+<h3>1. Reverse a String</h3>
+<input id="s1">
+<button onclick="v1()">Reverse</button>
+<p id="o1"></p>
+</section>
+
+<!-- 2 -->
+<section>
+<h3>2. Extract 3rd and 4th characters</h3>
+<input id="s2">
+<button onclick="v2()">Get</button>
+<p id="o2"></p>
+</section>
+
+<!-- 3 -->
+<section>
+<h3>3. Find Longest Word</h3>
+<input id="s3">
+<button onclick="v3()">Find</button>
+<p id="o3"></p>
+</section>
+
+<!-- 4 -->
+<section>
+<h3>4. Uppercase ↔ Lowercase</h3>
+<input id="s4">
+<button onclick="v4()">Convert</button>
+<p id="o4"></p>
+</section>
+
+<!-- 5 -->
+<section>
+<h3>5. Find Index of Substring</h3>
+<input id="s5">
+<button onclick="v5()">Find Index of 'a'</button>
+<p id="o5"></p>
+</section>
+
+<!-- 6 -->
+<section>
+<h3>6. Count words, chars, spaces</h3>
+<input id="s6">
+<button onclick="v6()">Count</button>
+<p id="o6"></p>
+</section>
+
+<!-- 7 -->
+<section>
+<h3>7. Array of fruits – display 3rd</h3>
+<button onclick="v7()">Show</button>
+<p id="o7"></p>
+</section>
+
+<!-- 8 -->
+<section>
+<h3>8. Last element from array</h3>
+<button onclick="v8()">Show</button>
+<p id="o8"></p>
+</section>
+
+<!-- 9 -->
+<section>
+<h3>9. Find 10th character</h3>
+<input id="s9">
+<button onclick="v9()">Find</button>
+<p id="o9"></p>
+</section>
+
+<!-- 10 -->
+<section>
+<h3>10. Display array using loop</h3>
+<button onclick="v10()">Show</button>
+<p id="o10"></p>
+</section>
+
+<!-- 11 -->
+<section>
+<h3>11. Map – Double values</h3>
+<button onclick="v11()">Map</button>
+<p id="o11"></p>
+</section>
+
+<!-- 12 -->
+<section>
+<h3>12. Remove duplicates</h3>
+<button onclick="v12()">Remove</button>
+<p id="o12"></p>
+</section>
+
+<!-- 13 -->
+<section>
+<h3>13. Splice delete</h3>
+<button onclick="v13()">Delete</button>
+<p id="o13"></p>
+</section>
+
+<!-- 14 -->
+<section>
+<h3>14. Splice insert</h3>
+<button onclick="v14()">Insert</button>
+<p id="o14"></p>
+</section>
+
+<!-- 15 -->
+<section>
+<h3>15. Calculator (+ - * /)</h3>
+<input id="a"><input id="b">
+<button onclick="v15('+')">+</button>
+<button onclick="v15('-')">-</button>
+<button onclick="v15('*')">*</button>
+<button onclick="v15('/')">/</button>
+<p id="o15"></p>
+</section>
+
+<!-- 16 -->
+<section>
+<h3>16. Add two numbers</h3>
+<button onclick="o16.innerText=+a.value + +b.value">Add</button>
+<p id="o16"></p>
+</section>
+
+<!-- 17 -->
+<section>
+<h3>17. Subtract</h3>
+<button onclick="o17.innerText=a.value-b.value">Subtract</button>
+<p id="o17"></p>
+</section>
+
+<!-- 18 -->
+<section>
+<h3>18. Multiply</h3>
+<button onclick="o18.innerText=a.value*b.value">Multiply</button>
+<p id="o18"></p>
+</section>
+
+<!-- 19 -->
+<section>
+<h3>19. Divide</h3>
+<button onclick="o19.innerText=a.value/b.value">Divide</button>
+<p id="o19"></p>
+</section>
+
+<!-- 20 -->
+<section>
+<h3>20. 10-digit mobile validation</h3>
+<input id="m">
+<button onclick="o20.innerText=/^\d{10}$/.test(m.value)">Check</button>
+<p id="o20"></p>
+</section>
+
+<!-- 21 -->
+<section>
+<h3>21. Detect number or string</h3>
+<input id="x">
+<button onclick="o21.innerText=isNaN(x.value)?'String':'Number'">Check</button>
+<p id="o21"></p>
+</section>
+
+<!-- 22 -->
+<section>
+<h3>22. Only numbers</h3>
+<button onclick="o22.innerText=/^\d+$/.test(x.value)">Check</button>
+<p id="o22"></p>
+</section>
+
+<!-- 23 -->
+<section>
+<h3>23. Only alphabets</h3>
+<button onclick="o23.innerText=/^[A-Za-z]+$/.test(x.value)">Check</button>
+<p id="o23"></p>
+</section>
+
+<!-- 24 -->
+<section>
+<h3>24. Signup form</h3>
+<input id="n"><input id="e">
+<button onclick="o24.innerText=n.value+' '+e.value">Submit</button>
+<p id="o24"></p>
+</section>
+
+<!-- 25 -->
+<section>
+<h3>25. Display submitted data</h3>
+<p>Above data displayed 👆</p>
+</section>
+
+<!-- 26 -->
+<section>
+<h3>26. Email validation</h3>
+<button onclick="o26.innerText=e.value.includes('@')">Validate</button>
+<p id="o26"></p>
+</section>
+
+<!-- 27 -->
+<section>
+<h3>27. Person object</h3>
+<button onclick="v27()">Create</button>
+<p id="o27"></p>
+</section>
+
+<!-- 28 -->
+<section>
+<h3>28. Display person object</h3>
+<p id="o28"></p>
+</section>
+
+<!-- 29 -->
+<section>
+<h3>29. Stopwatch</h3>
+<button onclick="start()">Start</button>
+<button onclick="stop()">Stop</button>
+<p id="t">0</p>
+</section>
+
+<!-- 30 -->
+<section>
+<h3>30. Change background color</h3>
+<button onclick="document.body.style.background='lightblue'">Change</button>
+</section>
+
+<script>
+function v1(){o1.innerText=s1.value.split('').reverse().join('')}
+function v2(){o2.innerText=s2.value[2]+" "+s2.value[3]}
+function v3(){o3.innerText=s3.value.split(" ").sort((a,b)=>b.length-a.length)[0]}
+function v4(){o4.innerText=s4.value===s4.value.toUpperCase()?s4.value.toLowerCase():s4.value.toUpperCase()}
+function v5(){o5.innerText=s5.value.indexOf('a')}
+function v6(){o6.innerText=s6.value.length}
+function v7(){o7.innerText=["Apple","Banana","Mango"][2]}
+function v8(){let a=["A","B","C"];o8.innerText=a[a.length-1]}
+function v9(){o9.innerText=s9.value[9]}
+function v10(){let a=[1,2,3];o10.innerText=a}
+function v11(){o11.innerText=[1,2,3].map(x=>x*2)}
+function v12(){o12.innerText=[...new Set([1,1,2,3])]}
+function v13(){let a=[1,2,3];a.splice(1,1);o13.innerText=a}
+function v14(){let a=[1,2,3];a.splice(1,0,9);o14.innerText=a}
+function v15(op){o15.innerText=eval(a.value+op+b.value)}
+function v27(){let p={name:"Ali",age:20};o27.innerText=JSON.stringify(p);o28.innerText=JSON.stringify(p)}
+let i=0,tm
+function start(){tm=setInterval(()=>t.innerText=++i,1000)}
+function stop(){clearInterval(tm);i=0;t.innerText=0}
+</script>
+
+</body>
+</html>
